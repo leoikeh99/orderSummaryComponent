@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="icon" type="image/gif/png" href="./images/favicon-32x32.png" />
+    <title>Order Summary</title>
+  </head>
+  <body
+    class="font-rhd p-0 m-0 bg-mainBg h-screen flex justify-center items-center"
+  >
+    <img
+      class="absolute top-0 left-0 w-full z-0 object-cover res:block hidden"
+      src="./images/pattern-background-desktop.svg"
+      alt=""
+    />
+    <img
+      class="absolute top-0 left-0 w-full z-0 object-cover block res:hidden"
+      src="./images/pattern-background-mobile.svg"
+      alt=""
+    />
+    <main class="w-11/12 res:w-card absolute z-10 box-border">
+      <img class="rounded-t-2xl" src="./images/illustration-hero.svg" alt="" />
+      <div class="text-center p-6 res:p-12 bg-bg1 rounded-b-2xl res:pb-2">
+        <h1 class="text-text1 res:text-3xl text-2xl font-black">
+          Order Summary
+        </h1>
+        <p class="text-text2 py-4">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div
+          class="
+            bg-bg2
+            res:p-5
+            p-3
+            rounded-md
+            box-border
+            flex
+            items-center
+            justify-between
+            mb-7
+            flex-col
+            xxs:flex-row xxs:items-center
+          "
+        >
+          <div class="flex items-center gap-2 res:gap-4">
+            <img src="./images/icon-music.svg" alt="" />
+            <div>
+              <p class="font-black text-text1 text-sm sm:text-base">
+                Annual plan
+              </p>
+              <p class="text-text2">$59.99/year</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="
+              justify-self-end
+              text-primary
+              font-bold
+              underline
+              hover:no-underline
+            "
+            >Change</a
+          >
+        </div>
+        <button
+          class="
+            block
+            w-full
+            py-3
+            text-center
+            bg-primary
+            text-white
+            rounded-lg
+            shadow-btn
+            hover:bg-primaryHover
+          "
+        >
+          Proceed to Payment
+        </button>
+        <button
+          class="
+            block
+            w-full
+            py-3
+            text-center text-text2
+            mt-2
+            font-black
+            hover:text-text1
+          "
+        >
+          Cancel Order
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
